@@ -1,0 +1,29 @@
+{
+  "POST API WITH SCHEMA": {
+    "prefix": "POST_API_SCHEMA",
+    "body": [
+      "fastify.route({",
+      "  method: 'POST',",
+      "  url: __filename.replace(__entry, '').replace(/\\\\\\/g, '/').replace('.js', ''),",
+      "  preValidation: [fastify.authenticate],",
+      "  schema: {",
+      "    body: {",
+      "      type: 'object',",
+      "      properties: {",
+      "        id: {",
+      "          type: 'integer'",
+      "        }",
+      "      },",
+      "      required: ['id']",
+      "    }",
+      "  },",
+      "  handler: async (req, res) => {",
+      "    const { id } = req.body",
+      "",
+      "    return true",
+      "  }",
+      "})"
+    ],
+    "description": "POST API BACKEND DOMBOOK"
+  }
+}
