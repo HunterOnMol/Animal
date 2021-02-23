@@ -1,0 +1,33 @@
+{
+  "name": "lizard_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node ./index.js",
+    "lint": "eslint . --ext .js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "fastify": "^3.12.0",
+    "fastify-jwt": "^2.3.0",
+    "fastify-loader": "^2.4.0",
+    "fs-extra": "^9.1.0",
+    "node-telegram-bot-api": "^0.51.0",
+    "nodemailer": "^6.4.18",
+    "pg": "^8.5.1",
+    "pino": "^6.11.1",
+    "pino-pretty": "^4.5.0",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "jest": "^26.6.3"
+  }
+}
