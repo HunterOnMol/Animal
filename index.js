@@ -95,6 +95,6 @@ fastify.register(jwt, {
   }
 })
 
-// fastify.decorate('authenticate', AuthDecorator)
+fastify.decorate('authenticate', AuthDecorator)
 
 module.exports = fastify
