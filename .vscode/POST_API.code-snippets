@@ -1,0 +1,18 @@
+{
+  "POST API": {
+    "prefix": "POST_API",
+    "body": [
+      "fastify.route({",
+      "  method: 'POST',",
+      "  url: __filename.replace(__entry, '').replace(/\\\\\\/g, '/').replace('.js', ''),",
+      "  preValidation: [fastify.authenticate],",
+      "  handler: async (req, res) => {",
+      "    const { id } = req.body",
+      "",
+      "    return true",
+      "  }",
+      "})"
+    ],
+    "description": "POST API BACKEND DOMBOOK"
+  }
+}
