@@ -1,0 +1,19 @@
+version: '2.1'
+services:
+  postgres:
+    image: kartoza/postgis:13.0
+    container_name: postgis-local
+
+    ports:
+      - 5432:5432
+
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '5'
+
+    environment:
+      - POSTGRES_DB=lizard_dev,lizard_prod
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=HgJYXX3vy4936aULxMJJ
